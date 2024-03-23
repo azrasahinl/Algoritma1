@@ -1,0 +1,23 @@
+
+package newpackage;
+
+import java.util.Scanner;
+
+public class algoornek11 {
+    public static void main(String[] args) {
+        Scanner k=new Scanner(System.in);
+        int x=k.nextInt();
+        int y=k.nextInt();
+        if(x>0 && y>0)
+            System.out.println("1.bölgedesiniz.");
+        if(x>0 && y<0)
+            System.out.println("4.bölgedesiniz.");
+        if(x<0 && y>0)
+            System.out.println("2.bölgedesiniz.");
+        if(x<0 && y<0)
+            System.out.println("3.bölgedesiniz.");
+        if(x==0 && y==0)
+            System.out.println("Orijindesiniz.");
+    }
+  
+}
