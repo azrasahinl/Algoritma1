@@ -1,0 +1,22 @@
+package algo.örnek.sorular;
+
+import java.util.Scanner;
+
+public class algoyazokulu2017 {
+    public static void main(String[] args) {
+   
+
+    for (int i = 100; i <= 999; i++) {
+        int yüzlerBasamak = i / 100;
+        int onlarBasamak = (i % 100) / 10;
+        int birlerBasamak = i % 10;
+
+        int karelerToplami = (yüzlerBasamak * yüzlerBasamak) + (onlarBasamak * onlarBasamak) + (birlerBasamak * birlerBasamak);
+
+        if (karelerToplami == i) {
+            System.out.println(i);
+        }
+    }
+}
+
+    }
