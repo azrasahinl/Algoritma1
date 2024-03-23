@@ -1,0 +1,21 @@
+package newpackage;
+import java.util.Scanner;
+
+public class algoornek14 {
+    public static void main(String[] args) {
+        Scanner k=new Scanner(System.in);
+        int sayac1=0,sayac2=0,sayac3=0;
+        for (int i = 0; i <5; i++) {
+          int x=k.nextInt();
+           if(x%2!=0){
+           sayac1++;
+           System.out.println("Tek sayİ sayisi:"+sayac1);
+       }else if(x%2==0){
+           sayac2++;
+           System.out.println("Cift sayi sayisi:"+sayac2);
+       }else if(x==0){
+          sayac3++;
+            System.out.println("Sifir sayisi:"+sayac3);}
+     } 
+  }
+}
