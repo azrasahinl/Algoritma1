@@ -1,0 +1,29 @@
+
+package algo.örnek.sorular;
+
+import java.util.Scanner;
+
+
+public class ÖRNEK31 {
+    //Klavyeden girilem N sayısına göre 1den Nye kadar olan tek sayıların toplamı ve çarpımı,çift sayıların ise karelerinin toplamını bulan program
+    public static void main(String[] args) {
+        Scanner k = new Scanner (System.in);
+        int sayi,toplam=0,carpim=1,toplam2=0;
+        System.out.println("Bir sayi giriniz");
+        sayi=k.nextInt();
+        for (int i = 1; i <= sayi; i=i+2) {
+            toplam=toplam+i;
+            carpim=carpim*i;
+             }
+        
+        System.out.println("tek sayilarin toplami:"+toplam);
+        System.out.println("tek sayilarin carpimi:"+carpim);
+        
+    
+      for(int j=2;j<=sayi;j=j+2){
+          toplam2=toplam+(sayi*sayi);
+      }
+        System.out.println("cift sayilarin karelerinin toplami"+toplam2);
+    
+          } 
+}
