@@ -1,0 +1,16 @@
+package algo.örnek.sorular;
+public class algofinal2017_2 {
+    public static String Aynı(String str1,String str2){
+        String s=" ";
+        for (int i = 0; i <str1.length(); i++) {
+            if(str1.charAt(i)==str2.charAt(i)){
+            s+=str1.charAt(i);
+            }
+        }return s;
+    
+    }
+    public static void main(String[] args) {
+    String kelime=Aynı("Taner","tamer");
+        System.out.println(kelime);    
+    }
+}
