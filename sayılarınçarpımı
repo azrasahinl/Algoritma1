@@ -1,0 +1,17 @@
+//birden n'e kadar olan sayıların çarpımı    
+
+package algo.örnek.sorular;
+
+import java.util.Scanner;
+
+public class algoörnek72024 {
+    public static void main(String[] args) {
+        Scanner k=new Scanner(System.in);
+        int n=k.nextInt();
+        int carpim=1;
+        for (int i = 1; i <= n; i++) {
+           carpim*=i;
+       }
+        System.out.println(carpim);
+    }
+}
