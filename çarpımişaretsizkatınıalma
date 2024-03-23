@@ -1,0 +1,22 @@
+
+package algo.örnek.sorular;
+
+import java.util.Scanner;
+
+
+public class ÖRNEK48 {
+    public static void main(String[] args) {
+        //Çarpım kullanılmadan klavyeden girilen sayının 3 katını bulan program.
+        Scanner k = new Scanner ( System.in);
+        System.out.println("Bir sayi giriniz");
+        int sayi;
+        sayi=k.nextInt();
+        int carpim ;
+        carpim=sayi+sayi+sayi;
+                
+        System.out.println(carpim);
+                
+        
+                
+    }
+}
