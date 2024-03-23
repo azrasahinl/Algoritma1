@@ -1,0 +1,27 @@
+
+package algo.örnek.sorular;
+
+import java.util.Scanner;
+
+
+public class ÖRNEK39csıkkı {
+    public static void main(String[] args) {
+         Scanner k = new Scanner(System.in);
+    int kenar1,kenar2,kenar3,yukseklik ,cevre,alan;
+        System.out.println("Birinci kenari giriniz");
+        kenar1=k.nextInt();
+        System.out.println("İkinci kenari giriniz");
+        kenar2=k.nextInt();
+        System.out.println("Ucuncu kenari giriniz");
+        kenar3=k.nextInt();
+        System.out.println("Yukseklik giriniz");
+        yukseklik=k.nextInt();
+        alan=(yukseklik*kenar1)/2;
+        System.out.println("Ucgenin alani"+alan+"dir");
+        cevre=kenar1+kenar2+kenar3;
+        System.out.println("Ucgenin cevresi"+cevre+"dir");
+          
+            
+    }
+    
+}
