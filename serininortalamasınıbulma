@@ -1,0 +1,16 @@
+//2,4,8,16,32,... serisinin ilk 10 elemanının aritmetik ort. bulan ve ekrana yazan prog
+package newpackage;
+public class algoornek45 {
+    public static void main(String[] args) {
+        int sayi=2;
+        int toplam=0;
+        double ort=0.0;
+        for (int i =0;i<10; i++) {
+            toplam+=sayi;
+            sayi=sayi*2;
+            
+        }
+        ort=toplam/10;
+        System.out.println(ort);
+    }
+}
