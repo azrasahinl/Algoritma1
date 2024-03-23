@@ -1,0 +1,19 @@
+
+package algo.örnek.sorular;
+
+import java.util.Scanner;
+
+public class algoörnek302024 {
+//Girilen bir sayının basamak değerleri toplamını bulma
+public static void main(String[] args) {
+        Scanner k=new Scanner(System.in);
+ int sayi=k.nextInt();
+ int toplam=0;
+ while(sayi!=0){
+  toplam+=sayi%10;
+  sayi/=10;  
+ }
+    System.out.println(toplam);
+    }
+    
+}
