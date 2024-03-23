@@ -1,0 +1,32 @@
+   //Bir fabrikada sabit maaşla çalışan işçiler aile durumlarına göre ek maaş almaktadırlar.
+    //Çocuk sayısı bir ise maaşın %5i kadar,çocuk sayısı 2 ise %10u kadar,3 ve daha fazlası ise %15i kadar aile yardımı almaktadırlar.
+    //Buna göre kullanıcıdan işçinin maaşı ve çocuk sayısını isteyen programı giriniz.
+package algo.örnek.sorular;
+
+import java.util.Scanner;
+
+
+public class ÖRNEK26 {
+ 
+    public static void main(String[] args) {
+        Scanner k= new Scanner (System.in);
+        int cocuksayisi,maas,toplam=0,toplam2=0,toplam3=0;
+        System.out.println("Cocuk sayisini giriniz");
+        cocuksayisi=k.nextInt();
+        System.out.println("Maas giriniz");
+        maas=k.nextInt();
+        if(cocuksayisi>=3){
+            toplam=maas+(maas*15/100);
+            System.out.println("İscinin maasi:"+toplam);
+            }
+        else if(cocuksayisi==2){
+            toplam2=maas+(maas*10/100);
+            System.out.println("İscinin maasi:"+toplam2);
+        }
+        else if(cocuksayisi==1){
+            toplam3=maas+(maas*5/100);
+            System.out.println("İscinin maasi:"+toplam3);
+        }
+    }
+    
+}
