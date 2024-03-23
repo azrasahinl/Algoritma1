@@ -1,0 +1,20 @@
+package algo.örnek.sorular;
+
+import java.util.Scanner;
+
+public class algoyazokulu20172 {
+    public static void main(String[] args) {
+   Scanner k = new Scanner(System.in);
+    System.out.println("x sayisini giriniz:");
+    int x = k.nextInt();
+
+    int kuvvet = 0;
+    while (x % 2 == 0) {
+        kuvvet++;
+        x /= 2;
+    }
+
+    System.out.println("x sayisi 2'nin " + kuvvet + ". kuvvetidir.");
+}
+
+    }
