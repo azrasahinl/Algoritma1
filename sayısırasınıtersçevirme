@@ -1,0 +1,20 @@
+ //Üç tam sayıyı okuyan ve sayıları tersten yazdıran bir Java programı
+//yazınız.
+//Örnek bir program çıktısı:
+//LUTFEN UC TAM SAYI GIRINIZ: 23 98 17
+//TERSTEN OKUNDUGUNDA: 17 98 23   
+package algo.örnek.sorular;
+
+import java.util.Scanner;
+
+public class algoörnek172024 {
+
+    public static void main(String[] args) {
+        Scanner k=new Scanner(System.in);
+        System.out.println("Lutfen 3 tam sayi giriniz");
+        int x=k.nextInt();
+        int y=k.nextInt();
+        int z=k.nextInt();
+        System.out.println(z+","+y+","+x);
+    }
+}
