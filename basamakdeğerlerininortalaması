@@ -1,0 +1,24 @@
+//1000 ile 2000 arasında klavyeden girilen bir sayının basamak değerlerinin ortalamsını ekrana yazan java kodu.
+package newpackage;
+
+import java.util.Scanner;
+
+public class algoornek46 {
+    public static void main(String[] args) {
+        Scanner k=new Scanner(System.in);
+        int sayi=k.nextInt();
+        int birlesbas = 0;
+        int onlarbas=0;
+        int yuzlerbas=0;
+        int binlerbas=0;
+        double ortalama=0;
+        if(sayi>=1000 && sayi<=2000){
+            birlesbas=sayi%10;
+            onlarbas=((sayi/10)%10);
+            yuzlerbas=((sayi/100)%10);
+            binlerbas=(sayi/100);}
+        ortalama=(binlerbas+yuzlerbas+onlarbas+birlesbas)/4;
+        System.out.println(ortalama);
+            
+    }
+}
