@@ -1,0 +1,17 @@
+
+package newpackage;
+
+import java.util.Scanner;
+
+public class algoornek12 {
+    public static void main(String[] args) {
+    Scanner k= new Scanner(System.in);   
+    int sayi=k.nextInt();
+    int sayac=0;
+    while(sayi!=0){
+        sayi=sayi/10;
+        sayac++;
+    }System.out.println(sayac);
+    }
+  
+}
