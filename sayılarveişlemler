@@ -1,0 +1,41 @@
+
+package algo.örnek.sorular;
+
+import java.util.Scanner;
+
+
+public class ÖRNEK34 {
+    //Klavyeden 2 sayı giriliyor ve sonra yapılacak işlem giriliyor ve işlem sonucu ekrana yazılıyor
+    public static void main(String[] args) {
+        Scanner k = new Scanner (System.in);
+        int sayi1,sayi2,islem = 0,toplam,carpma,bolme,cıkarma;
+       
+        System.out.println("İslem menusu\n1-Toplama\n2-Cıkartma\n3-Carpma\n4-Bolme");
+        System.out.println("Lutfen 1 ile 4 arasında İslem seciniz");
+        islem=k.nextInt();
+        
+         System.out.println("Birinci sayiyi giriniz");
+        sayi1=k.nextInt();
+        System.out.println("İkinci sayiyi giriniz");
+        sayi2=k.nextInt();
+        
+        if(islem==1){
+         toplam=sayi1+sayi2;
+            System.out.println(toplam);
+        }
+        else if (islem==2){
+          cıkarma=sayi1-sayi2; 
+            System.out.println(cıkarma);
+        }
+        else if(islem==3){
+          carpma=sayi1*sayi2;
+            System.out.println(carpma);
+        }
+        else if(islem==4){
+            bolme=sayi1/sayi2;
+            System.out.println(bolme);
+             
+        }
+        
+    }
+}
