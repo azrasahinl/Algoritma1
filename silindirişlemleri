@@ -1,0 +1,24 @@
+
+package algo.örnek.sorular;
+
+import java.util.Scanner;
+
+
+public class ÖRNEK42 {
+    //Silindirin alanı ve hacmini hesaplayan programı yazınız.
+    public static void main(String[] args) {
+        int yukseklik,yaricap, pi,alan,hacim;
+       Scanner k = new Scanner( System.in);
+        System.out.println("Yukseklik giriniz");
+        yukseklik=k.nextInt();
+        System.out.println("Yaricap giriniz");
+        yaricap=k.nextInt();
+        System.out.println("Pi sayisinin degerini giriniz");
+        pi=k.nextInt();
+        alan=yukseklik*pi*yaricap*yaricap;
+        System.out.println("silindirin alani"+alan+"dir");
+        hacim=(2*pi*yaricap*yaricap)+(2*pi*yaricap*yukseklik);
+        System.out.println("silindirin hacmi"+hacim+"dir");
+    }
+    
+}
