@@ -1,0 +1,31 @@
+    //Klavyeden 3 adet kenar uzunluğu giriliyor girilen değerlere göre 
+   // a)Üçgen çizilip çizilemeyeceği
+   // b)Eğer üçgen çizilrse üçgenin çeşidini(ikizkenar,eşkenar,çeşitkenar)
+  //  c)Girilen üçgwnin alanını ve çevresini bulup ekrana yazan programı yazınız
+package algo.örnek.sorular;
+
+import java.util.Scanner;
+
+
+public class ÖRNEK39asıkkı {
+
+    public static void main(String[] args) {
+        Scanner k = new Scanner(System.in);
+        int kenar1,kenar2,kenar3;
+        System.out.println("Birinci kenari giriniz");
+        kenar1=k.nextInt();
+        System.out.println("İkinci kenari giriniz");
+        kenar2=k.nextInt();
+        System.out.println("Ucuncu kenari giriniz");
+        kenar3=k.nextInt();
+        
+        if(kenar1+kenar3>kenar2){
+            if(kenar2>kenar1-kenar3){
+                System.out.println("Bu kenarlarla ucgen çizilebilir");}
+        }
+        else{
+            System.out.println("Ucgen cizilemez");
+        }
+    }
+    
+}
