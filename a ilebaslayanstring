@@ -1,0 +1,19 @@
+
+package algo.örnek.sorular;
+
+import java.util.Scanner;
+
+public class algoyazokulu2017_4 {
+   //Klavyeden girilen stringte a ile başlayanları ekrana yazan program
+    public static void main(String[] args) {
+        Scanner k=new Scanner(System.in);
+        String str;
+        str=k.next();
+        for (int i = 0; i <str.length(); i++) {
+          
+             if(str.charAt(0)=='a')
+                System.out.println(str);   
+        }
+
+    }
+}
