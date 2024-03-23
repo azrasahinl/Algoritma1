@@ -1,0 +1,18 @@
+//Klavyeden girdiğin kelimenin kaçarlı ayrılmasını istersen o şekilde alt alta yazcak
+package algo.örnek.sorular;
+
+import java.util.Scanner;
+
+public class algoörnek62024 {
+    public static void main(String[] args) {
+   Scanner k=new Scanner(System.in);
+        System.out.println("Bir yazi giriniz");
+   String s=k.nextLine();
+        System.out.println("Kac karakyter ayrilsin");
+   int ayir=k.nextInt();
+        System.out.println(s.charAt(3));
+        for (int i = 0; i <s.length()-ayir; i++) {
+            System.out.println(s.substring(i,i+ayir));//ilk karakter ve son karakteri veriyoruz
+        }
+    }
+}
