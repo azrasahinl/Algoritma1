@@ -1,0 +1,22 @@
+//b
+//bi
+//bil
+//...
+package algo.örnek.sorular;
+
+import java.util.Scanner;
+
+public class algoörnek92024 {
+    public static void main(String[] args) {
+  Scanner k=new Scanner(System.in);
+  String s=k.nextLine();
+
+        for (int i = 0; i < s.length(); i++) {
+            for (int j = 1; j <= s.length(); j++){ 
+        String subString =s.substring(i,j);
+                System.out.println(subString);}
+            
+        }
+ 
+}
+}
