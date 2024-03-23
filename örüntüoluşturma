@@ -1,0 +1,24 @@
+
+package algo.örnek.sorular;
+
+import java.util.Scanner;
+
+public class algoörnek332024 {
+public static void main(String[] args) {
+  //* Ör: 3 girdiysek:
+//* &
+//* &&
+//* &&& örüntüsü oluşacak  
+Scanner k=new Scanner(System.in);
+int s=k.nextInt();
+    for (int i = 0; i <s; i++) {
+        for (int j = 0; j <i; j++) {
+            System.out.print("&");
+        }
+     System.out.println(" ");   
+    }
+    
+    }
+    
+}
+
