@@ -1,0 +1,31 @@
+
+package algo.örnek.sorular;
+
+import java.util.Scanner;
+
+
+public class ÖRNEK39bsıkkı {
+    public static void main(String[] args) {
+        Scanner k = new Scanner(System.in);
+        int kenar1,kenar2,kenar3;
+        System.out.println("Birinci kenari giriniz");
+        kenar1=k.nextInt();
+        System.out.println("İkinci kenari giriniz");
+        kenar2=k.nextInt();
+        System.out.println("Ucuncu kenari giriniz");
+        kenar3=k.nextInt();
+        if(kenar1==kenar2){
+            if(kenar2==kenar3)
+                System.out.println("Ucgen eskenar ucgendir");
+            
+        }
+        else if (kenar1==kenar2){
+            if(kenar2!=kenar3)
+                System.out.println("Ucgen ikizkenar ucgendir");
+            
+        }
+        else{
+               System.out.println("Ucgen cesitkenar ucgendir");
+        }
+}
+}
