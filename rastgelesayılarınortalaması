@@ -1,0 +1,44 @@
+   //Arka arkaya girilen rastgerle 10 tam sayının ortalaması ile bu sayılardan 
+  //en büyük ve en küçük olanını ortalamasını bularak bu iki ortalamanın farkını alan programı yazınız.
+package algo.örnek.sorular;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class ÖRNEK50 {
+
+ 
+    public static void main(String[] args) {
+   
+      Scanner k = new Scanner ( System.in);
+        Random rastgele = new Random(100);
+        int maks = 0;
+        int min = 999999999;
+        int toplam = 0;
+        int sayilarinOrtalamasi = 1;
+        for (int i=1;i<=10;i++){
+            int number = rastgele.nextInt(100);
+            System.out.println(number);
+            toplam = toplam + number;
+
+            if (number<min){
+                min = number;
+            }else if (number>=maks){
+                maks = number;
+            }
+        }
+        sayilarinOrtalamasi = (maks + min)/2;
+        double fark = sayilarinOrtalamasi-toplam/10;
+        System.out.println("Sayıların ortalaması:"+toplam/10);
+        System.out.println("En büyük sayı ile en küçük sayının ortalaması:"+sayilarinOrtalamasi);
+        if (fark<0){
+            System.out.println("Fark:"+fark*(-1));
+        }else {
+            System.out.println("Fark:"+fark);
+        }
+
+            
+        }
+    }
+    
+
