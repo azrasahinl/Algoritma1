@@ -1,0 +1,42 @@
+
+package algo.örnek.sorular;
+
+import java.util.Scanner;
+
+
+public class ÖRNEK28 {
+    //İkinci dereceden denklem köklerini bulan programı giriniz.
+    public static void main(String[] args) {
+        Scanner k = new Scanner (System.in);
+          int a,b,c;
+          double delta,x1,x2;
+        System.out.println("a'yı giriniz");
+        a=k.nextInt();
+        System.out.println("b'yi giriniz");
+        b=k.nextInt();
+        System.out.println("c'yi giriniz");
+        c=k.nextInt();
+        delta=b*b-4*a*c;
+        if(delta>0){
+            x1=(-b+Math.sqrt(delta))/2*a;
+            x2=(-b-Math.sqrt(delta)/2*a); 
+            System.out.println("birinci kök:"+x1);
+            System.out.println("ikinci kök:"+x2);
+        }
+        
+            
+       
+        else if (delta==0){
+            x1=(-b/2*a);
+            x2=(-b/2*a);
+            System.out.println("Kökler eşit:"+x1); 
+        }
+        else{
+          System.out.println("Kökler komplekstir"); 
+        }
+           
+        
+     }
+    }
+    
+
