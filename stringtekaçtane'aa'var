@@ -1,0 +1,18 @@
+
+import java.util.Scanner;
+
+
+public class kasım10_2 {
+    //girilen stringte kaç tane aa vardır
+    public static void main(String[] args) {
+        Scanner k= new Scanner( System.in);
+        System.out.println("Bir kelime giriniz");
+        String kelime= k.nextLine();
+        int sayac=0;
+        for (int i = 0; i <kelime.length()-1; i++) {
+            if(kelime.charAt(i)=='a' && kelime.charAt(i)=='a')
+            sayac++;
+        }
+        System.out.println(sayac+"tane aa vardır");
+    }
+}
