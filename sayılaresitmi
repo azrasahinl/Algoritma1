@@ -1,0 +1,20 @@
+package algo.örnek.sorular;
+
+import java.util.Scanner;
+
+public class algovize2018_1 {
+ 
+    public static void main(String[] args) {
+        Scanner k=new Scanner(System.in);
+       int a=k.nextInt() ;
+
+        for (int i = 1; i < 10; i++) {
+             int b=k.nextInt();
+             if(a!=b){
+                 System.out.println("sayilar esit degil");}
+        }
+                 System.out.println("sayilar esit");
+
+    }
+  
+}
