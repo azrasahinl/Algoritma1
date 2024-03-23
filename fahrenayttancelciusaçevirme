@@ -1,0 +1,19 @@
+//Fahrenhayt derecesini (F) ondalık (decimal) şeklinde okuyup, Celcius
+//derecesine çeviren Java programını yazınız.
+package algo.örnek.sorular;
+
+import java.util.Scanner;
+
+public class algoörnek162024 {
+    public static void main(String[] args) {
+
+//C = 5/9 (F – 32)
+
+//Programınızı, F=32 ve F=105 için test edin.
+Scanner k=new Scanner(System.in);
+ double F=k.nextInt();
+ double C=(5.0/9.0)*(F-32);
+        System.out.println(C);
+    }
+   
+}
