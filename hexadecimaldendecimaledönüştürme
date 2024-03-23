@@ -1,0 +1,42 @@
+//Kendisine parametre olarak gelen maximum 5 basamaklı hexadecimal sayının on tabanındaki değerini geri döndüren metod
+package newpackage;
+public class algoornek8 {
+
+
+    public static int hexadecimalToDecimal(String hexNumber) {
+        int length = hexNumber.length();
+        int decimalNumber = 0;
+
+        for (int i = 0; i < length; i++) {
+            char hexChar = hexNumber.charAt(i);
+            int digitValue = getHexDigitValue(hexChar);
+            int positionValue = (int) Math.pow(16, length - 1 - i);
+            decimalNumber += digitValue * positionValue;
+        }
+
+        return decimalNumber;
+    }
+
+    private static int getHexDigitValue(char hexDigit) {
+        if (hexDigit >= '0' && hexDigit <= '9') {
+            return hexDigit - '0';
+        } else if (hexDigit >= 'A' && hexDigit <= 'F') {
+            return hexDigit - 'A' + 10;
+        } else if (hexDigit >= 'a' && hexDigit <= 'f') {
+            return hexDigit - 'a' + 10;
+        } else {
+            throw new IllegalArgumentException("Geçersiz hexadecimal karakter: " + hexDigit);
+        }
+    }
+
+    public static void main(String[] args) {
+        // Örnek kullanım
+        String hexNumber = "1A3F"; // Değiştirebilirsiniz
+        int decimalResult = hexadecimalToDecimal(hexNumber);
+
+        System.out.println("Hexadecimal: " + hexNumber);
+        System.out.println("Decimal: " + decimalResult);
+    }
+}
+
+
