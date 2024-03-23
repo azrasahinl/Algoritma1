@@ -1,0 +1,36 @@
+
+import java.util.Scanner;
+
+
+public class kasım10 {
+    public static void main(String[] args) {
+        //Sıcak soguk oyunu yapalım. Sistem 100e kadar bir sayı üretsin. Kullanıcı bu sayıyı tahmin
+//etmeye çalışsın. Kullanıcının girdiği değere göre kullanıcıyı arttır azalt diyerek uyaralım.
+//Kullanıcı sayıyı bulana kadar tahmin istemeye devam edelim ve sayıyı buldugunda kaç denemeden
+//sonra bulduğunu belirtelim.
+
+        Scanner k= new Scanner (System.in);
+        int sayi = (int) (Math.random() * 101);
+        int a;
+        int sayac = 0;
+        while(true){
+            System.out.println("sayiyi tahmin ediniz");
+            a=k.nextInt();
+       
+          if(sayi==a){
+                sayac++;
+                System.out.println("tebrikler" + sayac + ".kerede bildiniz.");
+                System.exit(1);
+                
+            }
+            else if(a<sayi){
+                System.out.println("artiriniz.");
+                sayac++;
+            }
+            else if(a>sayi){
+                System.out.println("azaltiniz.");
+                sayac++;
+            }
+    }
+}
+}
