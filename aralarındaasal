@@ -1,0 +1,27 @@
+
+package algo.örnek.sorular;
+
+import java.util.Scanner;
+
+public class algoörnek112024 {
+  //iki sayının aralarında asal olup olmadığına bakan program
+    public static void main(String[] args) {
+        Scanner k=new Scanner(System.in);
+        int ilk=k.nextInt();
+        int ikinci=k.nextInt();
+        int i;
+        boolean aralarındaasal=true;
+        System.out.println("Ortak bolenleri:");
+        for (i=2; i <=ilk; i++) {
+            if((ilk%i==0) && (ikinci%i==0)){
+                System.out.println(i);
+            aralarındaasal=false;}
+         
+            
+        }
+        if(aralarındaasal){
+            System.out.println(" aralarinda asaldir");
+        }else{
+            System.out.println("aralarinda asal degildir");}
+    }
+}
