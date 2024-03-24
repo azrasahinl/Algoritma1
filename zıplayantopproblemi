@@ -1,0 +1,24 @@
+
+package newpackage;
+public class algoornek24 {
+   public static void main(String[] args) {
+        double topCapi = 30.0; // cm
+        double yukseklik = 200.0; // cm
+        double ziplamaFaktoru = 0.8;
+
+        double toplamYol = 0.0;
+
+        while (yukseklik > 0) {
+            toplamYol += yukseklik; // Her zıplamada toplam yolu artır
+
+            yukseklik *= ziplamaFaktoru; // Yüksekliği %80'i kadar azalt
+
+            if (yukseklik * 2 < topCapi) {
+                // Topun çapından daha küçük bir yüksekliğe düştüğünde dur
+                break;
+            }
+        }
+
+        System.out.println("Toplam yol: " + toplamYol + " cm");
+    }  
+}
